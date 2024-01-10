@@ -19,7 +19,7 @@
         <span> {{ character.power }}</span>
      </div>
 
-    <button class="btn btn-danger mx-4" (click)="onDeleteCharacter(i)">X</button>
+    <button class="btn btn-danger mx-4" (click)="onDeleteCharacter( character.id || '' )">X</button>
 
 
 </li>

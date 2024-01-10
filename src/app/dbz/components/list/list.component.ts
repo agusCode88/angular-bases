@@ -21,11 +21,11 @@ export class ListComponent {
   //onDelete = Index value: number  
 
   @Output() 
-  public onDelete: EventEmitter<number> = new EventEmitter();
+  public onDelete: EventEmitter<string> = new EventEmitter();
 
-  onDeleteCharacter(index: number): void {
+  onDeleteCharacter(id: string): void {
      // TODO: Emitir el id del personaje
-     this.onDelete.emit(index);
+     this.onDelete.emit(id);
   }
 
 }
